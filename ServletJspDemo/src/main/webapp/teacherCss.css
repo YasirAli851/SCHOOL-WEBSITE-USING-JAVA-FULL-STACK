@@ -1,0 +1,133 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f9f4; /* Light greenish background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all content horizontally */
+    justify-content: center; /* Center all content vertically */
+    height: 100vh;
+}
+
+/* Header Section Styling */
+.header {
+    background-color: #2d6a4f; /* Dark green header */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Welcome Message */
+.welcome-message {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #dc3545; /* Red button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Absolute positioning */
+    right: 20px; /* Place the button to the right */
+    top: 20px; /* Place the button at the top */
+}
+
+.logout-btn:hover {
+    background-color: #c82333; /* Darker red when hovered */
+}
+
+/* Main Content Area */
+#teacherLoginSuccess {
+    margin-top: 80px; /* Added some space to account for the fixed header */
+    text-align: center;
+}
+
+/* Login Success Message */
+#teacherLoginSuccess h1 {
+    color: #2d6a4f; /* Dark green text for success message */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 300px; /* Fixed width for the card */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 30px; /* Space from the top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    color: #2d6a4f;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.card-btn {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #1d4e36; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logout-btn {
+        margin-top: 1rem;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    #teacherLoginSuccess h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 90%; /* Card takes more width on small screens */
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,117 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #333, #000); /* Dark gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: white; /* White text color */
+    padding: 10px; /* Remove extra spacing around the body */
+    text-align: center; /* Center the text globally */
+}
+
+/* Header Styling - Centered at the Top */
+.header-container {
+    position: absolute;
+    top: 20px; /* Space from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Centering horizontally */
+    background: linear-gradient(135deg, #333, #000);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header-container h1 {
+    color: white;
+    font-size: 30px; /* Adjust font size */
+    font-weight: bold;
+}
+
+/* Main Container Styling */
+.container {
+    width: 100%;
+    max-width: 600px; /* Limit the width to make the form compact */
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Add margin from the top to give space for the header */
+}
+
+/* OTP Form Styling */
+#otpvalid {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* OTP Form Title */
+#otpvalid h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Label Styling */
+#otpvalid label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Styling */
+#otpvalid input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Focus Effect */
+#otpvalid input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit Button Styling */
+#otpvalid input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#otpvalid input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #otpvalid {
+        width: 100%;
+    }
+}
