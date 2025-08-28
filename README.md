@@ -2,5 +2,7 @@ SEE FULL WEBSITE BY CLICKING ON THIS LINK :- https://drive.google.com/file/d/1CK
 
 SOURCE CODES FILES AND FOLDER STRUCTURE:-
 ALL SERVLETS FILES:- ServletJspDemo -> src->main->java->com->yasir->web
+
 ALL JSP FILES:- ServletJspDemo->  src->main->webapp
+
 POM.XML:-INSIDE ServletJspDemo
